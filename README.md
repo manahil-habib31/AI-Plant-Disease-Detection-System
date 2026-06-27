@@ -288,28 +288,7 @@ System testing is performed using Selenium WebDriver to verify the complete work
 ---
 
 # 📷 Screenshots
-
-## Dashboard
-
-(Add Screenshot)
-
----
-
-## Prediction Result
-
-(Add Screenshot)
-
----
-
-## Prediction History
-
-(Add Screenshot)
-
----
-
-## About Model
-
-(Add Screenshot)
+ScreenShots are added in a Seperate folder.
 
 ---
 
