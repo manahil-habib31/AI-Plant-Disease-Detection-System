@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plant Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f8;
+            text-align: center;
+            padding-top: 50px;
+        }
+        input {
+            padding: 10px;
+            margin: 8px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 25px;
+            background: green;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>🌱 Plant Disease Prediction (ANN)</h2>
+<form action="/predict" method="POST">
+    <input type="number" step="any" name="feature1" placeholder="Temperature" required>
+    <input type="number" step="any" name="feature2" placeholder="Humidity" required>
+    <input type="number" step="any" name="feature3" placeholder="Rainfall" required>
+    <input type="number" step="any" name="feature4" placeholder="Soil pH" required>
+
+    <button type="submit">Predict</button>
+</form>
+
+{% if prediction_text %}
+    <h3>{{ prediction_text }}</h3>
+    <p>Probability: {{ probability }}%</p>
+{% endif %}
+
+
+</body>
+</html>

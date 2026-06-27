@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | Plant Disease Detection System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>About the System</h1>
+
+    <p>
+        The <strong>Plant Disease Detection System</strong> is an intelligent web-based application
+        that predicts plant disease risk using environmental and soil-related parameters.
+        It uses an <strong>Artificial Neural Network (ANN)</strong> for prediction.
+    </p>
+
+    <hr>
+
+    <h2>🔍 Input Features</h2>
+    <p>The model uses four environmental features:</p>
+    <ul>
+        <li><strong>Temperature (°C)</strong> – Air temperature affecting plant growth</li>
+        <li><strong>Humidity (%)</strong> – Moisture level in the air</li>
+        <li><strong>Rainfall (mm)</strong> – Amount of rainfall received</li>
+        <li><strong>Soil pH</strong> – Acidity/alkalinity of the soil</li>
+    </ul>
+
+    <hr>
+
+    <h2>🧠 AI Agents</h2>
+    <p>The system uses <strong>three AI agents</strong> to process and interpret the ANN output:</p>
+    <ul>
+        <li><strong>1. Confidence Agent:</strong> Assesses how reliable the prediction is (Low, Medium, High confidence).</li>
+        <li><strong>2. Disease Status Agent:</strong> Converts probability into categorical status: <em>Healthy</em> or <em>Diseased</em> based on a threshold.</li>
+        <li><strong>3. Risk Decision Agent:</strong> Converts probability into risk levels (Low, Moderate, High) and provides actionable recommendations for the user.</li>
+    </ul>
+
+    <p>
+        Together, these agents form an intelligent decision-making framework that guides users in assessing plant health risk.
+    </p>
+
+    <hr>
+
+    <h2>🤖 How the Prediction Works</h2>
+    <ol>
+        <li>User inputs environmental parameters (temperature, humidity, rainfall, soil pH).</li>
+        <li>ANN model outputs a probability score indicating disease risk.</li>
+        <li>AI agents interpret the probability:
+            <ul>
+                <li>Confidence agent shows prediction reliability.</li>
+                <li>Disease status agent determines Healthy/Diseased.</li>
+                <li>Risk decision agent provides risk level and recommendations.</li>
+            </ul>
+        </li>
+        <li>Results are displayed and saved in the database for historical tracking.</li>
+    </ol>
+
+    <hr>
+
+    <h2>📊 Data Storage</h2>
+    <p>
+        All predictions are stored in a local database. Users can review historical results to track
+        plant health trends over time.
+    </p>
+
+    <hr>
+
+    <h2>🎯 System Objectives</h2>
+    <ul>
+        <li>Early detection of plant disease risk</li>
+        <li>User-friendly interface</li>
+        <li>Accurate predictions with minimal features</li>
+        <li>Decision support through intelligent recommendations</li>
+        <li>Track historical plant health trends</li>
+    </ul>
+
+    <br>
+    <a href="/" class="btn">⬅ Back to Dashboard</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,332 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f8;
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh;
+
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 220px;
+    background: #1b5e20;
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+}
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.risk-bar {
+    height: 22px;
+    background: #ddd;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#riskFill {
+    height: 100%;
+    width: 0%;
+    background: green;
+    text-align: center;
+    font-size: 12px;
+
+}
+button {
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #1b5e20;
+    transform: scale(1.03);
+}
+
+.card {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#riskFill {
+    height: 100%;
+    width: 0%;
+    transition: width 1s ease-in-out;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+#explainBox p {
+    background: #f1f8e9;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 6px 0;
+}
+.risk-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#riskFill {
+    height: 20px;
+    width: 0%;
+    transition: width 0.5s ease;
+}
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    max-width: 520px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #2e7d32;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(46,125,50,0.2);
+}
+.status-box {
+    margin: 15px 0;
+}
+
+.status-badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.healthy {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.diseased {
+    background: #ffebee;
+    color: #c62828;
+}
+.risk-bar {
+    width: 100%;
+    background: #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 22px;
+}
+
+#riskFill {
+    height: 100%;
+    width: 0%;
+    line-height: 22px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    transition: width 0.8s ease;
+    color: white;
+}
+#recommendations li {
+    background: #f1f8e9;
+    margin: 6px 0;
+    padding: 10px;
+    border-radius: 10px;
+    list-style: none;
+}
+/* ===============================
+   ABOUT PAGE STYLING
+   =============================== */
+
+body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: #f4f7fb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #2e7d32;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #1b5e20;
+    margin-top: 30px;
+    font-size: 22px;
+    border-left: 5px solid #4caf50;
+    padding-left: 12px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+ul li {
+    font-size: 15.5px;
+    margin-bottom: 8px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 30px 0;
+}
+
+/* ===============================
+   BUTTON
+   =============================== */
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(135deg, #43a047, #2e7d32);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(46, 125, 50, 0.4);
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+.agent-panel {
+    background: #f4f6fa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.agent-box {
+    background: white;
+    padding: 12px 15px;
+    border-left: 6px solid #4caf50;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.agent-box h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.agent-value {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}

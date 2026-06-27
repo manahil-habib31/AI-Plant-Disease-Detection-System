@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>🌱 Plant Disease Prediction</h1>
+
+<div class="card">
+
+    <h3>Environmental Inputs</h3>
+
+    <label>🌡️ Temperature (°C)</label>
+    <input id="temperature" type="number" placeholder="e.g. 25">
+
+    <label>💧 Humidity (%)</label>
+    <input id="humidity" type="number" placeholder="e.g. 70">
+
+    <label>🌧️ Rainfall (mm)</label>
+    <input id="rainfall" type="number" placeholder="e.g. 120">
+
+    <label>🧪 Soil pH</label>
+    <input id="soil_pH" type="number" placeholder="0 – 14">
+
+    <button id="predictBtn" onclick="predict()">🔍 Predict</button>
+
+    <!-- =========================
+         STATUS (Healthy / Diseased)
+    ========================== -->
+    <div class="status-box">
+        <span id="statusText" class="status-badge"></span>
+    </div>
+
+    <!-- =========================
+         RISK BAR
+    ========================== -->
+    <h3>Disease Risk Level</h3>
+    <div class="risk-bar">
+    <div id="riskFill"></div>
+    </div>
+    <p id="riskText"></p>
+
+
+
+    <!-- =========================
+         SEVERITY LEVEL
+    ========================== -->
+    <p id="severityText"></p>
+
+    <!-- =========================
+         RECOMMENDATIONS
+    ========================== -->
+    <h3>🤖 Agent Recommendations</h3>
+    <ul id="recommendations"></ul>
+
+
+</div>
+
+<!-- =========================
+     AI AGENT DECISION PANEL
+========================== -->
+<div class="agent-panel">
+
+    <h3>🧠 AI Agent Decisions</h3>
+
+    <div class="agent-box">
+        <h4>🩺 Disease Status Agent</h4>
+        <p id="diseaseStatus" class="agent-value"></p>
+    </div>
+
+
+    <div class="agent-box">
+        <h4>📊 Confidence Agent</h4>
+        <p id="confidenceText" class="agent-value"></p>
+    </div>
+
+</div>
+
+
+{% endblock %}
