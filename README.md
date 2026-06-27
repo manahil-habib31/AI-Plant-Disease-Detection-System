@@ -288,8 +288,26 @@ System testing is performed using Selenium WebDriver to verify the complete work
 ---
 
 # 📷 Screenshots
-ScreenShots are added in a Seperate folder.
 
+## Dashboard
+
+![Dashboard](ScreenShots/Dashboard1.png)
+![Dashboard](ScreenShots/Prediction.png)
+![Dashboard](ScreenShots/Dashboard3.png)
+
+## Prediction Result
+
+![Prediction](ScreenShots/Prediction.png)
+
+## Prediction History
+
+![History](ScreenShots/History.png)
+
+## About Model
+
+![About](ScreenShots/About1.png)
+![About](ScreenShots/About2.png)
+![About](ScreenShots/About3.png)
 ---
 
 # 🎯 Objectives
